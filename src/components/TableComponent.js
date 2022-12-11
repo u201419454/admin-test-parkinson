@@ -13,7 +13,7 @@ class TableComponent extends React.Component {
 
   async componentDidMount() {
     const { idExamen } = this.props;
-    const response = await fetch("http://127.0.0.1:5000/examen/" + idExamen);
+    const response = await fetch("https://parkinson-prediction-api.ew.r.appspot.com/examen/" + idExamen);
     const json = await response.json();
     this.setState({ data: json });
   }

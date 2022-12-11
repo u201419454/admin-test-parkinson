@@ -40,7 +40,7 @@ class AsyncCSV extends Component {
     
     const { idExamen } = this.props;
 
-    return fetch("http://127.0.0.1:5000/examen/" + idExamen)
+    return fetch("https://parkinson-prediction-api.ew.r.appspot.com/examen/" + idExamen)
       .then(res => res.json());
   }
 

@@ -49,7 +49,7 @@ import axios from 'axios';
     document.getElementById("blkResultData").classList.remove("hide");
 
 
-    axios.post("http://127.0.0.1:5000/upload-historical-data") 
+    axios.post("https://parkinson-prediction-api.ew.r.appspot.com/upload-historical-data") 
     .then(response => {
       console.log(response.data.data); 
       document.getElementById("txtEntrenamiento").value = response.data.data.precision_training;

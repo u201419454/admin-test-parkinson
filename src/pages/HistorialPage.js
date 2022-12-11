@@ -22,7 +22,7 @@ function HistorialPage() {
   
   useEffect(() => {
     (async () => {
-        const result = await axios("http://127.0.0.1:5000/examen-dni/" + dni);
+        const result = await axios("https://parkinson-prediction-api.ew.r.appspot.com/examen-dni/" + dni);
         setHistoriales(result.data.data);
     })();
   }, []);

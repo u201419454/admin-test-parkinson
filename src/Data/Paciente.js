@@ -9,7 +9,7 @@ function Paciente({paciente:{dni, nombres, apellidos, fec_nac, edad, fec_reg, ca
   var test = function(valor){
     console.log(valor);
     var paciente;
-    axios.get('http://127.0.0.1:5000/paciente/' + valor)
+    axios.get('https://parkinson-prediction-api.ew.r.appspot.com/paciente/' + valor)
       .then(res => {
         const persons = res.data;
         paciente = persons.data;

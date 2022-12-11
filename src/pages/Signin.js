@@ -23,7 +23,7 @@ var autenticar = function(){
       "user" : document.getElementById("txtUser").value,
       "pass" : document.getElementById("txtPass").value  
   }    
-  axios.post('http://127.0.0.1:5000/autenticar', paciente)
+  axios.post('https://parkinson-prediction-api.ew.r.appspot.com/autenticar', paciente)
       .then(response => {
         console.log(response.data);
         if(response.data.status == "error"){

@@ -10,7 +10,7 @@ function ReportsPage() {
 
   useEffect(() => {
     (async () => {
-      const result = await axios("http://127.0.0.1:5000/reporte-examen");
+      const result = await axios("https://parkinson-prediction-api.ew.r.appspot.com/reporte-examen");
       console.log(result.data.data)
       setReportes(result.data.data);
     })();

@@ -15,7 +15,7 @@ function PatientPage() {
 
   useEffect(() => {
     (async () => {
-      const result = await axios("http://127.0.0.1:5000/pacientes");
+      const result = await axios("https://parkinson-prediction-api.ew.r.appspot.com/pacientes");
       setPacientes(result.data);
     })();
   }, []);

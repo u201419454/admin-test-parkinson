@@ -74,7 +74,7 @@ function CargarExamen() {
           }
   
           const xhr = new XMLHttpRequest();
-          xhr.open('POST', 'http://127.0.0.1:5000/test-parkinson');
+          xhr.open('POST', 'https://parkinson-prediction-api.ew.r.appspot.com/test-parkinson');
           xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
           xhr.responseType = 'json';
           xhr.onload = function(e) {

@@ -44,7 +44,7 @@ function padTo2Digits(num) {
         "edad" : document.getElementById("txtEdad").value,
         "dni" : document.getElementById("txtDni").value
     }    
-    axios.post('http://127.0.0.1:5000/paciente', paciente)
+    axios.post('https://parkinson-prediction-api.ew.r.appspot.com/paciente', paciente)
         .then(response => {
           console.log(response.data);
           document.getElementById("blkMessage").style.display = "none"
